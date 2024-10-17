@@ -27,9 +27,9 @@ console.log(words); // ['apple', 'Banana', 'Cherry']
 
 "ОБʼЄКТИ"
 let people = [
-  { name: 'John', age: 30 },
-  { name: 'Jane', age: 22 },
-  { name: 'Jack', age: 35 }
+    { name: 'John', age: 30 },
+    { name: 'Jane', age: 22 },
+    { name: 'Jack', age: 35 }
 ];
 
 // Сортування за зростанням віку
@@ -54,15 +54,15 @@ console.log(cities); // ['Київ', 'Львів', 'Одеса']
 // filter, map
 
 const people2 = [
-  { name: 'John', age: 30 },
-  { name: 'Jane', age: 22 },
-  { name: 'Jack', age: 35 },
-  { name: 'Alice', age: 19 }
+    { name: 'John', age: 30 },
+    { name: 'Jane', age: 22 },
+    { name: 'Jack', age: 35 },
+    { name: 'Alice', age: 19 }
 ];
 
 const youngPeopleNames = people2
-  .filter(person => person.age < 30) // Фільтруємо молодих людей [ { name: 'Jane', age: 22 },{ name: 'Alice', age: 19 }]
-  .map(person => person.name.toUpperCase()); // Преобразуємо їхні імена у верхній регістр
+    .filter(person => person.age < 30) // Фільтруємо молодих людей [ { name: 'Jane', age: 22 },{ name: 'Alice', age: 19 }]
+    .map(person => person.name.toUpperCase()); // Преобразуємо їхні імена у верхній регістр
 
 console.log(youngPeopleNames); // ["JANE", "ALICE"]
 
@@ -70,19 +70,19 @@ console.log(youngPeopleNames); // ["JANE", "ALICE"]
 //filter, map, sort
 
 const products = [
-  { name: 'Laptop', price: 1000 },
-  { name: 'Phone', price: 700 },
-  { name: 'Book', price: 15 },
-  { name: 'Pen', price: 5 }
+    { name: 'Laptop', price: 1000 },
+    { name: 'Phone', price: 700 },
+    { name: 'Book', price: 15 },
+    { name: 'Pen', price: 5 }
 ];
 
 const filteredAndSortedProducts = products
-  .filter(product => product.price > 20) // Залишаємо товари дорожче 20 доларів
-  .map(product => ({
-    ...product, // Копіюємо всі властивості
-    price: product.price * 2 // Подвоюємо ціну
-  }))
-  .sort((a, b) => a.price - b.price); // Сортуємо за ціною від найменшої до найбільшої
+    .filter(product => product.price > 20) // Залишаємо товари дорожче 20 доларів
+    .map(product => ({
+        ...product, // Копіюємо всі властивості
+        price: product.price * 2 // Подвоюємо ціну
+    }))
+    .sort((a, b) => a.price - b.price); // Сортуємо за ціною від найменшої до найбільшої
 
 console.log(filteredAndSortedProducts);
 // [{ name: 'Phone', price: 1400 }, { name: 'Laptop', price: 2000 }]
@@ -93,13 +93,13 @@ console.log(filteredAndSortedProducts);
 //метод повертає true, інакше — false.
 
 const students = [
-  { name: 'John', age: 18 },
-  { name: 'Jane', age: 22 },
-  { name: 'Jack', age: 19 },
-  { name: 'Alice', age: 23 }
+    { name: 'John', age: 18 },
+    { name: 'Jane', age: 22 },
+    { name: 'Jack', age: 19 },
+    { name: 'Alice', age: 23 }
 ];
 
-const hasOlderStudent = students.some(student => student.age > 25); 
+const hasOlderStudent = students.some(student => student.age > 25);
 console.log(hasOlderStudent); // Виведе: false
 
 // Метод every() перевіряє, чи всі елементи масиву відповідають умові, яку ми передаємо у вигляді колбек-функції. 
@@ -138,7 +138,7 @@ console.log(areAllAdults); // Виведе: false
 
 // reverse() – змінює порядок елементів масиву на місці.
 // const arr = [1, 2, 3];
-// arr.reverse(); // arr стає [3, 2, 1]
+// arr.reve     rse(); // arr стає [3, 2, 1]
 
 // fill() – заповнює масив одним значенням.
 // const arr = [1, 2, 3];
